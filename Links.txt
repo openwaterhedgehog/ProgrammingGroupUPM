@@ -1,1 +1,32 @@
-https://www.investing.com/etfs/amundi-msci-world-de-historical-data
+Overview of Investment Items:
+
+LU0996182563
+Amundi Index Msci World Ae-c
+0.4 % of invested capital 
+https://www.investing.com/funds/amundi-msci-wrld-ae-c
+amundi-msci-wrld-ae-c.csv 
+
+IE00B7J7TB45
+iShares Global Corporate Bond UCITS (CRPS)
+0.2 % of invested capital 
+https://www.investing.com/etfs/ishares-global-corporate-bond-$
+ishares-global-corporate-bond-$.csv 
+
+LU0908508731
+Xtrackers II Global Government Bond UCITS ETF 5C (XG7S) ETF
+0.2 % of invested capital 
+https://www.investing.com/etfs/db-x-trackers-ii-global-sovereign-5
+db-x-trackers-ii-global-sovereign-5.csv 
+
+US78463V1070
+SPDR® Gold Shares (GLD) ETF
+0.1 % of invested capital
+https://www.investing.com/etfs/spdr-gold-trust
+spdr-gold-trust.csv
+
+
+US78463V1070
+US Dollar Index (DXY)
+0.0 % of invested capital 
+https://www.investing.com/indices/usdollar
+usdollar.csv
