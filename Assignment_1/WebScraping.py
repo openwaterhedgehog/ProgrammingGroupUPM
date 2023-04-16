@@ -48,8 +48,8 @@ def convertToCSV(headerList, bodyList):
 
 # Main function
 def main():
+    wd = webdriver.Chrome()
     try:
-        wd = webdriver.Chrome()
         wd.get('https://www.investing.com/funds/amundi-msci-wrld-ae-c-historical-data')
         wd.maximize_window()
         wd.execute_script("window.scrollTo(0,300)")
