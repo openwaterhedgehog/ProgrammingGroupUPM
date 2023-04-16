@@ -7,7 +7,7 @@ The project is divided into two folders: assignment 1 and 2
 
 The portfolio generation works with the generated csv files of the scraped data in assignment 1.
 
-But as the parts were performed in parallel, the portfolio data analysis (part 2.1) is based on the data from moodle and not the scraped data.
+But as the parts were performed in parallel, the portfolio data analysis (part 2.1) is based on the data from moodle and not the scraped data. The porfolio and calculated returns and volatilities are saved in the file *portfolio_metrics_historical_data.csv*. This is the result of running the Evaluation.py script.
 
 
 ## Running the project
