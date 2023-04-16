@@ -26,7 +26,7 @@ But as the parts were performed in parallel, the portfolio data analysis (part 2
     python web_scraping.py
 
 ### Data generation (assignment 2):
-Prerequisite: To execute the code the packages from the *requirements.txt* (in folder Assignment_2) need to be installed. Taking start date (e.g. 01/01/2020), end date (e.g. 12/31/2020) and csv files to process as arguments. The csv files must have a column with name "Date" and entries in a date format like "Dec 31, 2020" and a column with the name "Price" and entries in floating point format. The input date formats can be changed in the first lines of the script. We changed the provided csv files from the assignment, so pandas can read them.
+Prerequisite: To execute the code the packages from the *requirements.txt* (in folder Assignment_2) need to be installed. Taking start date (e.g. 01/01/2020), end date (e.g. 12/31/2020) and csv files to process as arguments. The csv files must have a column named "Date" and entries in a date format like "Dec 31, 2020" and a column named "Price" and entries in floating point format. The input date formats can be changed in the first lines of the script. We changed the provided csv files from the assignment, so pandas can read them.
 
     python Evaluation.py 01/01/2020 12/31/2020 Historical_Prices_Csv/*.csv
 
