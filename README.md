@@ -16,7 +16,7 @@ csv (version 1.0 or higher)
 
 Requires that you have the Chrome browser and the ChromeDriver executable on your system and added it to your system's PATH environment variable, because the script uses ChromeDriver to interact with the Chrome browser.
  
- 2. Run the script in terminal where the script is sved:
+ 2. Run the script in terminal where the script is stored:
 python web_scraping.py
 
 Data generation (assignment 2):
