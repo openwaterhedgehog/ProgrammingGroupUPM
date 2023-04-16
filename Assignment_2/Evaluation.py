@@ -15,7 +15,7 @@ def calculate_combinations(n, m):
 def combine_help(assets, rest, step):
     if len(assets) == 1:
         asset = assets[0].copy()
-        asset["shares"] = round(rest, ndigits=3)
+        asset["shares"] = abs(round(rest, ndigits=3))
         return [[asset]]
 
     out = list()
@@ -23,7 +23,7 @@ def combine_help(assets, rest, step):
         combinations = combine_help(assets[1:], rest-x, step)
         for combination in combinations:
             asset = assets[0].copy()
-            asset["shares"] = round(x, ndigits=3)
+            asset["shares"] = abs(round(x, ndigits=3))
             combination.append(asset)
 
         out += combinations
