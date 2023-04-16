@@ -5,6 +5,11 @@ The project is divided into two folders: assignment 1 and 2
 - Assignment 1 handles the web scraping functionality to create the csv files
 - The files for data generation and data analysis are in the folder assignment 2.
 
+The portfolio generation works with the generated csv files of the scraped data in assignment 1.
+
+But as the parts were performed in parallel, the portfolio data analysis (part 2.1) is based on the data from moodle and not the scraped data.
+
+
 ## Running the project
 
 
@@ -22,6 +27,8 @@ The project is divided into two folders: assignment 1 and 2
 
 ### Data generation (assignment 2):
 Prerequisite: To execute the code the packages from the *requirements.txt* (in folder Assignment_2) need to be installed.
+
+
 
 ### Data analysis (assignment 2):
 This part is not executable. The results can be found in the pdf document. For a closer look open the analysis.ipynb in a Jupyter Notebook environemnt. The cells should be executed sequentially.
