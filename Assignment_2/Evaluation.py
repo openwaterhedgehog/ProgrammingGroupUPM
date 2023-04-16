@@ -5,6 +5,8 @@ import sys
 import math
 from datetime import datetime
 
+ARG_DATE_FORMAT = '%m/%d/%Y'
+FILE_DATE_FORMAT = '%b %d, %Y'
 
 # Calculates
 def calculate_combinations(n, m):
@@ -44,7 +46,7 @@ def prepare_table(table, date_start, date_end):
     prices = dict()
     #prices_sum = 0
     for row, date in table["Date"].items():
-        date = datetime.strptime(table["Date"][row], '%m/%d/%Y')
+        date = datetime.strptime(table["Date"][row], FILE_DATE_FORMAT)
 
         if date <= date_end:
             if date < date_start:
@@ -98,8 +100,8 @@ def calculate_return_volatility(combinations):
 
 if __name__ == '__main__':
     assets = list()
-    date_start = datetime.strptime(sys.argv[1], '%m/%d/%Y')
-    date_end = datetime.strptime(sys.argv[2], '%m/%d/%Y')
+    date_start = datetime.strptime(sys.argv[1], ARG_DATE_FORMAT)
+    date_end = datetime.strptime(sys.argv[2], ARG_DATE_FORMAT)
 
     for i in range(3, len(sys.argv)):
         table = pandas.read_csv(sys.argv[i])
