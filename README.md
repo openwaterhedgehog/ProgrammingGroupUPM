@@ -1,6 +1,4 @@
-# ProgrammingGroupUPM
-
-# READ ME 
+# ProgrammingGroupUPM - READ ME 
 
 ## Description of the content (files and dirs.) 
 The project is divided into two folders: assignment 1 and 2
