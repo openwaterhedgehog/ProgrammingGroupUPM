@@ -1,9 +1,11 @@
+# Using Selenium library for web scraping and csv module for converting to CSV file
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import csv
 
+# XPATH's for elements in web page
 DATE_XPATH =  "/html/body/div[5]/section/div[8]/div[3]/div/div[2]/span"
 START_XPATH = "//*[@id=\"startDate\"]"
 END_XPATH = "//*[@id=\"endDate\"]"
@@ -13,6 +15,7 @@ APPLY_XPATH =  "//*[@id=\"applyBtn\"]"
 HEADER_XPATH = "//*[@id=\"curr_table\"]/thead/tr"
 BODY_XPATH = "//*[@id=\"curr_table\"]/tbody"
 
+# Scrape table data in specified date range from browser
 def getTableData (wd):
     date_picker = WebDriverWait(wd,30).until(EC.element_to_be_clickable((By.XPATH,DATE_XPATH)))
     wd.execute_script("arguments[0].click();", date_picker)
@@ -30,7 +33,7 @@ def getTableData (wd):
     
     return [table_data_header, table_data_body]
 
-
+# Convert to CSV file
 def convertToCSV(headerList, bodyList):
     headerList = str.split(headerList.text)
     headerList[-2:] = [' '.join(headerList[-2:])]
@@ -43,7 +46,7 @@ def convertToCSV(headerList, bodyList):
         write.writerow(headerList)
         write.writerows(data_combined)
 
-
+# Main function
 def main():
     try:
         wd = webdriver.Chrome()
@@ -56,6 +59,7 @@ def main():
         print("Error occurred: ", e)
     finally:
         wd.quit()
-    
+        
+# Initialize main function
 if __name__ == "__main__":
     main()
